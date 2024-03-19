@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 export default function Banner({ carosel }) {
-   console.log(carosel)
+  
    const settings = {
       dots: true,
       infinite: true,
@@ -15,8 +15,8 @@ export default function Banner({ carosel }) {
    };
    return (
       <Slider {...settings}>
-         {carosel.map((item) => (
-            <div key={item.id}>
+         {carosel.map((item,index) => (
+            <div key={index}>
                <img src={item.image_url} alt="Slide 1" />
             </div>
          ))}
