@@ -35,7 +35,7 @@ export default function ProductDetail() {
                   </div>
                </div>
             </div>
-            <div className="mt-4 p-3 rounded-xl bg-orange-800 text-sm text-gray-100">
+            <div className="mt-4 p-3 rounded-xl bg-orange-950 text-sm text-gray-100">
                <h3 className="text-xl font-bold mb-4">Deskripsi Produk</h3>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus magnam eius aperiam facilis eligendi ipsa iste unde laborum porro vero, doloremque doloribus nesciunt nemo inventore alias deleniti minus officia.</p>
 
