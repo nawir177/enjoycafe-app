@@ -1,10 +1,12 @@
 import React from 'react'
 import App from '../App'
-import CardCart from './CardCart'
+import CardCart from '../../components/card/CardCart'
+import { Link } from 'react-router-dom'
 export default function CartList() {
   return (
     <App>
         <h1 className='text-xl font-bold text-primary my-3'>List keranjang</h1>
+       
         <CardCart/>
         <CardCart/>
         <CardCart/>
@@ -20,9 +22,12 @@ export default function CartList() {
                 Rp. 100.000
             </div>
         </div>
+        <Link to={'/payment'}>
         <button className='w-full py-2 bg-primary text-white rounded-xl mt-4 hover:bg-orange-400'>
             Checkout
         </button>
+        
+        </Link>
     </App>
   )
 }
