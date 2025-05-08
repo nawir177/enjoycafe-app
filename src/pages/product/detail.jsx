@@ -2,6 +2,14 @@ import App from "../App";
 import { useState } from "react";
 export default function ProductDetail() {
    const [preview, setPreview] = useState('')
+   const [qty, setQty]= useState(1);
+
+   const plusQty =()=>{
+      setQty(qty+1)
+   }
+   const minQty = ()=>{
+      qty <= 1 ? setQty(1) : setQty(qty - 1)
+   }
    return (
       <App title={'detail product'}>
          <div className="container">
@@ -43,7 +51,25 @@ export default function ProductDetail() {
 
             <div className="p-6 ring-2 ring-orange-400 rounded-xl mt-4">
                <p className="font-semibold  text-orange-500">Pilih Variant</p>
-               <div className="mt-2 flex gap-1 items-center">
+               <div className="mt-4 flex items-center gap-4">
+                  <div className="col">
+                     <button onClick={minQty} className="py-2 px-4 rounded bg-primary text-white text-xl">
+                        -
+                     </button>
+                 
+                  </div>
+                  <div className="col">
+                     <div className="py-2 px-6 bg-white text-2xl flex items-center">
+                        {qty}
+                     </div>
+                  </div>
+                  <div className="col">
+                     <button onClick={plusQty} className="py-2 px-4 rounded bg-primary text-white text-xl">
+                        +
+                     </button>
+                  </div>
+               </div>
+               <div className="mt-4 flex gap-1 items-center">
                   <div className="col">
                      <button className="flex gap-2 items-center py-1 px-4 border border-primary rounded ">
                         <div className="col">Dingin</div>
