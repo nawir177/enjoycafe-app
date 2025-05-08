@@ -50,13 +50,13 @@ export default function ProductDetail() {
             </div>
 
             <div className="p-6 ring-2 ring-orange-400 rounded-xl mt-4">
-               <p className="font-semibold  text-orange-500">Pilih Variant</p>
-               <div className="mt-4 flex items-center gap-4">
+               <p className="font-semibold  text-orange-500">Jumlah Pesanan</p>
+               <div className="mt-2 flex items-center gap-4 mb-4">
                   <div className="col">
                      <button onClick={minQty} className="py-2 px-4 rounded bg-primary text-white text-xl">
                         -
                      </button>
-                 
+
                   </div>
                   <div className="col">
                      <div className="py-2 px-6 bg-white text-2xl flex items-center">
@@ -69,6 +69,8 @@ export default function ProductDetail() {
                      </button>
                   </div>
                </div>
+               <p className="font-semibold  text-orange-500">Pilih Variant</p>
+             
                <div className="mt-4 flex gap-1 items-center">
                   <div className="col">
                      <button className="flex gap-2 items-center py-1 px-4 border border-primary rounded ">
