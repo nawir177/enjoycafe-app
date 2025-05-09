@@ -13,7 +13,7 @@ export default function PaymentList() {
                         </svg>
 
                     </div>
-                    <div className="col">
+                    <div className="col text-xl">
                         Alamat Pengeriman
                     </div>
                 </div>
@@ -53,6 +53,31 @@ export default function PaymentList() {
                     </div>
                 </div>
             </div>
+            <div className="flex gap-2 items-center text-primary mb-4">
+                <div className="col">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <div className="col">
+                    <h1 className='text-xl'>Metode Pembayaran</h1>
+                </div>
+            </div>
+          <div className="mb-4 bg-white p-4 shadow rounded-xl">
+                <div class="flex items-center mb-4">
+                    <input id="cod" type="radio" value="cod" name="pembayaran" className="size-3 text-primary bg-gray-100 border-gray-300" />
+                    <label for="cod" class="ms-2 text-sm font-medium text-gray-900 ">Bayar Di Tempat</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="bri" type="radio" value="bri" name="pembayaran" className="size-3 text-primary bg-gray-100 border-gray-300" />
+                    <label for="bri" class="ms-2 text-sm font-medium text-gray-900 ">Transfor BRI</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="dana" type="radio" value="dana" name="pembayaran" className="size-3 text-primary bg-gray-100 border-gray-300" />
+                    <label for="dana" class="ms-2 text-sm font-medium text-gray-900 ">Transfor Dana</label>
+                </div>
+          </div>
             <h1 className='text-xl text-primary mb-4'>Product yang di pesan </h1>
             <div className="relative overflow-x-scroll max-w-sm">
                 <table className='w-full font-normal text-sm text-left'>
